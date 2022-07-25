@@ -73,7 +73,7 @@ img{
 
 /* LOGO */
 .logo {
-  display: flex;
+  display: block;
 }
 
 .logo:hover{
@@ -416,4 +416,63 @@ img{
   margin: 0;
   font-size: 13px;
   line-height: 18px;
+}
+
+
+/* FOOTER */
+
+
+
+
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--black);
+  color: #fff;
+}
+
+.site-footer__container {
+  display: flex;
+}
+
+.site-footer__logo-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 160px;
+}
+
+.site-footer__logo {
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socilas__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.socials__link {
+  display: flex;
+  color: #fff;
+}
+
+.socials__link:hover{
+  color: var(--green);
+}
+
+.socials__link:active{
+  opacity: 0.6;
+}
+
+.socials__icon {
+  object-fit: contain;
+  object-position: center;
 }
